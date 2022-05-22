@@ -1,0 +1,157 @@
+.main-galeria {
+    h1 {
+        text-shadow: 0 0 15px white;
+        animation: animate 4s linear infinite;
+        margin: 2% 0;    }
+
+    .gallery {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 250px;
+        grid-template-areas:
+            "img1 img1 img5 img4"
+            "img2 img3 img6 img4"
+            "img7 img11 img12 img9"
+            "img7 img10 img8 img8";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+
+        div {
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 0 9px cyan, 0 0 16px blue;
+            overflow: hidden;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(51, 0, 255, 0.5);
+                transform: translate(100%);
+                transition: transform .4s;
+                color: white;
+                text-shadow: 0 0 10px rgb(0, 0, 0),
+                    0 0 20px white,
+                    0 0 40px white,
+                    0 0 80px white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+                letter-spacing: 2px;
+                font-family: 'Paytone One', sans-serif;
+            }
+
+            &:hover::before {
+                transform: translate(0);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .div1 {
+            grid-area: img1;
+
+            &::before {
+                content: "Patagonia Argentina";
+            }
+        }
+
+        .div2 {
+            grid-area: img2;
+
+            &::before {
+                content: "Chubut";
+            }
+        }
+
+        .div3 {
+            grid-area: img3;
+
+            &::before {
+                content: 
+                "Siete Lagos, Neuquen.";
+            }
+        }
+
+        .div4 {
+            grid-area: img4;
+
+            &::before {
+                content: "Rio Negro";
+            }
+        }
+
+        .div5 {
+            grid-area: img5;
+
+            &::before {
+                content: "Cordillera de los Andes";
+            }
+        }
+
+        .div6 {
+            grid-area: img6;
+
+            &::before {
+                content: "Siete Lagos, Neuquen";
+            }
+        }
+
+        .div7 {
+            grid-area: img7;
+
+            &::before {
+                content: "Cristo Redentor";
+            }
+        }
+
+        .div8 {
+            grid-area: img8;
+
+            &::before {
+                content: "Camino a La Quiaca";
+            }
+        }
+
+        .div9 {
+            grid-area: img9;
+
+            &::before {
+                content: "Quebrada de Flechas. Cafayate.";
+            }
+        }
+
+        .div10 {
+            grid-area: img10;
+
+            &::before {
+                content: "Jujuy";
+            }
+        }
+
+        .div11 {
+            grid-area: img11;
+
+            &::before {
+                content: "San Juan";
+            }
+        }
+
+        .div12 {
+            grid-area: img12;
+
+            &::before {
+                content: "Salta";
+            }
+        }
+    }
+}

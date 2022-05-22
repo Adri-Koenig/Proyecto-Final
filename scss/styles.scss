@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Domine', serif;
+}
+
+header {
+    // position: fixed;
+    top: 0%;
+    z-index: 3;
+    height: auto;
+}
+
+body {
+    background-image: url(../Img/Picture/f2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+
+    .disclaimer {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(22, 112, 255), transparent);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Paytone+One&display=swap');
+@import 'components/header';
+@import 'components/footer';
+@import 'components/index';
+@import 'components/equipo';
+@import 'components/destino';
+@import 'components/informacion';
+@import 'components/galeria';
+@import 'components/contacto';
+@import 'components/mobile';
+@import 'base/extends';

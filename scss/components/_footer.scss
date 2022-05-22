@@ -1,0 +1,79 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 5% 1% 1% 0;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 20px;
+            width: 25%;
+            background-color: aqua;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgb(0, 191, 255), 0 0 20px rgb(0, 153, 255);
+        }
+
+        h4 {
+            margin-left: 20px;
+            margin-bottom: 0;
+            letter-spacing: .2em;
+            font-family: 'Domine', serif;
+            color: rgb(0, 255, 255);
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+            line-height: 0.7em;
+            z-index: 1;
+            outline: none;
+            animation: animate 5s linear infinite;
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        position: absolute;
+
+        p {
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            text-shadow: 0 0 10px rgb(0, 191, 255), 0 0 20px rgb(0, 153, 255);
+
+        }
+    }
+
+    .redes {
+        display: flex;
+        width: 33%;
+        justify-content: flex-end;
+
+
+        ul {
+            margin-bottom: 0;
+            display: flex;
+            list-style: none;
+
+            li {
+                position: relative;
+                border-radius: 15%;
+                margin: 0 10px;
+                width: 100%;
+                color: black;
+                box-shadow: 0 0 10px rgb(0, 191, 255), 0 0 20px rgb(0, 153, 255);
+                background: linear-gradient(rgb(0, 191, 255), black, black, rgb(0, 153, 255));
+
+                &:hover {
+                    color: antiquewhite;
+                    transform: scale(1.2, 1.2);
+                    transition: all .8s;
+                }
+
+            }
+        }
+    }
+}

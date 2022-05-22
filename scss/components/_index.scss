@@ -1,0 +1,79 @@
+main {
+    @extend %flex;
+
+    .one {
+        @extend %flex;
+        box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px blue;
+        margin: 20px 0;
+
+        h2 {
+            text-align: center;
+            letter-spacing: 3px;
+            z-index: 2;
+            position: absolute;
+            margin: 0;
+            font-size: 2em;
+            color: aqua;
+            text-shadow: 0 0 10px blue, 0 0 15px black;
+        }
+
+        .gif {
+            width: 100%;
+            height: 30rem;
+        }
+    }
+
+    .two {
+        @extend %flex;
+
+        h1 {
+            color: blue;
+            text-shadow: 0 0 15px white;
+            animation: animate 4s linear infinite;
+            margin: 2% 0;
+        }
+
+        .img1,
+        .img2 {
+            width: 20%;
+            border-radius: 10%;
+            box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px blue;
+            height: 400px;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 2% 5%;
+
+            .img1 {
+                margin-left: 20px;
+            }
+
+            p {
+                margin-top: 50px;
+                text-align: center;
+                font-size: 1.5em;
+                color: cyan;
+                text-shadow: 1px 2px blue, 0 0 20px black, ;
+            }
+        }
+
+        .second {
+            display: flex;
+            padding: 2% 5%;
+
+            .img2 {
+                margin-right: 20px;
+            }
+
+            p {
+                margin-top: 50px;
+                text-align: center;
+                font-size: 1.5em;
+                color: cyan;
+                text-shadow: 1px 2px blue, 0 0 20px black, ;
+            }
+        }
+    }
+}
